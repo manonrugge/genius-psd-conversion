@@ -1,0 +1,24 @@
+.gallery {
+    background-color: lightgrey;
+}
+
+
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.gallery-image {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    img {
+        width: 100%;
+    }
+}
+
+.overlay {
+    display: none;
+}

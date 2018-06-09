@@ -1,5 +1,6 @@
 $font: 'Raleway', sans-serif;
-$mainColor: #66CDAA;
+$mainColor: #86bc42;
+$subColor: #f4f6fa;
 
 .wrapper {
 	max-width: 900px;
@@ -26,3 +27,5 @@ p {
 @import 'partials/header';
 @import 'partials/courses';
 @import 'partials/gallery';
+@import 'partials/sectionTitle';
+@import 'partials/news';

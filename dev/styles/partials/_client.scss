@@ -1,0 +1,55 @@
+.client {
+    background-color: $subColor;
+    padding: 50px 0px 150px 0px;
+}
+
+.client-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+.client-item {
+    width: 33.33%;
+    position: relative;
+    z-index: 20;
+    display: flex;
+    flex-direction: row;
+}
+
+.client-icon {
+    position: relative;
+    z-index: 60;
+    width: 10%;
+    img {
+        width: 75%;
+    }
+}
+
+.client-txt {
+    position: relative;
+    z-index: 70;
+    width: 95%;
+    line-height: 1.7rem;
+    letter-spacing: 0.02rem;
+    padding-left: 10px;
+    font-weight: 300;
+    h3 {
+        margin: 0;
+        font-size: 1.6rem;
+    }
+    p {
+        margin-top: 20px;
+        width: 85%;
+    }
+}
+.circle {
+    content:'';
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    top: -35px;
+    left: -25px;
+}

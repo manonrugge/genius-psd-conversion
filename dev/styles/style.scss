@@ -1,5 +1,7 @@
 $font: 'Raleway', sans-serif;
-$mainColor: #86bc42;
+$light: 300;
+$bold: 700;
+$mainColor: #FF4500;
 $subColor: #f4f6fa;
 
 .wrapper {
@@ -9,12 +11,12 @@ $subColor: #f4f6fa;
 
 html{
     font-size: 62.5%;
-    font-family: $font;
-    font-weight: 400;
 }
 
 body {
-	background-color: papayawhip;
+	// background-color: papayawhip;
+	font-family: $font;
+	font-weight: 400;
 }
 
 p {
@@ -29,3 +31,5 @@ p {
 @import 'partials/gallery';
 @import 'partials/sectionTitle';
 @import 'partials/news';
+@import 'partials/client';
+@import 'partials/pricing';

@@ -3,6 +3,9 @@ $light: 300;
 $bold: 700;
 $mainColor: #FF4500;
 $subColor: #f4f6fa;
+$darkGrey: #222;
+$black:#000;
+$white: #fff;
 
 .wrapper {
 	max-width: 900px;
@@ -33,3 +36,4 @@ p {
 @import 'partials/news';
 @import 'partials/client';
 @import 'partials/pricing';
+@import 'partials/footer';

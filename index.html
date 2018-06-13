@@ -7,7 +7,10 @@
 	<title>Genius</title>
 	<link rel="stylesheet" href="./public/styles/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
-	<script defer src='https://use.fontawesome.com/releases/v5.0.4/js/all.js'></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
+
 </head>
 <body>
 	<!-- page header start -->
@@ -514,17 +517,19 @@
 
 	<!-- page footer starts -->
 	<footer>
-		<div class="footer-block">
-			<h4>Genius</h4>
-			<p><span>Genius</span>provides broad range of learning programs and activities that's unique in itself.</p>
-			<ul class="programs">
-				<li>Mountain Trekking Programs</li>
-				<li>Inter School Competitions</li>
-				<li>Awards and Ceremony</li>
-			</ul>
-		</div>
-		<div class="footer-block">
-			<div class="footer-courses">
+		<div class="footer-container wrapper">
+
+			<div class="footer-block footer-about">
+				<h4>Genius</h4>
+				<p><span>Genius </span>provides broad range of learning programs and activities that's unique in itself.</p>
+				<ul class="programs">
+					<li>Mountain Trekking Programs</li>
+					<li>Inter School Competitions</li>
+					<li>Awards and Ceremony</li>
+				</ul>
+			</div>
+
+			<div class="footer-block footer-courses">
 				<h4>Courses</h4>
 				<ul class="footer-course-list">
 					<li>
@@ -547,44 +552,84 @@
 					</li>
 				</ul>
 			</div>
-		</div>	
-		<div class="footer-block">
-			<h4>Contact Us</h4>
-			<i class="fas fa-map-marker-alt"></i>
-			<p class="address">Hawkins DDR 873
-				<br>Drake APA 159
-				<br/>Yosemite AD 19</p>
-			<p class="phone-number">817 929 3756</p>
-			<p class="email">contact@com.vn</p>
-		</div>
-		<div class="footer-block">
-			<h4>Newsletter</h4>
-			<p>Sign up for new Envato content, updates, surveys &amp; offers.</p>
-			<div class="subscribe-form">
-				<form action="" method="POST" autocomplete="off" name="subscribeForm" class="clearfix">
-					<label class="visuallyhidden" for="emailSubscribe">Enter your email</label>
-					<input type="email" id="emailSubscribe" placeholder="Email address" class="emailSubscribe" name="emailSubscribe">
-					<button class="subscribeButton">
-						<i class="fas fa-paper-plane"></i>
-					</button>
-				</form>
+
+			<div class="footer-block footer-contact">
+				<h4>Contact Us</h4>
+				<div class="footer-address">
+					<i class="fas fa-map-marker-alt"></i>
+					<p>Hawkins DDR 873
+					<br>Drake APA 159
+					<br/>Yosemite AD 19</p>
+				</div>
+				<div class="footer-phone">
+					<i class="fas fa-phone-square"></i>
+					<p class="phone-number">(817) 929 3756</p>
+				</div>
+				<div class="footer-email">
+					<i class="fas fa-envelope"></i>
+					<p>contact@genius.com</p>
+				</div>
 			</div>
-			<p>We respect your privacy</p>
-			<div class="footer_social">
-				<a href="https://www.facebook.com/">
-					<i class="fab fa-facebook-square"></i>
-				</a>
-				<a href="https://twitter.com/">
-					<i class="fab fa-twitter-square"></i>
-				</a>
-				<a href="https://plus.google.com/discover">
-					<i class="fab fa-google-plus-square"></i>
-				</a>
-				<a href="https://www.instagram.com/?hl=en">
-					<i class="fab fa-instagram"></i>
-				</a>
+
+			<div class="footer-block footer-news">
+				<h4>Newsletter</h4>
+				<p>Sign up for new Envato content, updates, surveys &amp; offers.</p>
+				<div class="subscribe-form">
+					<form action="" method="POST" autocomplete="off" name="subscribeForm" class="clearfix">
+						<label class="visuallyhidden" for="emailSubscribe">Enter your email</label>
+						<input type="email" id="emailSubscribe" placeholder="Email address" class="emailSubscribe" name="emailSubscribe">
+						<button class="subscribeButton">
+							<i class="fas fa-paper-plane"></i>
+						</button>
+					</form>
+				</div>
+				<p>We respect your privacy</p>
+				<div class="footer-social">
+					<a href="https://www.facebook.com/">
+						<i class="fab fa-facebook-square"></i>
+					</a>
+					<a href="https://twitter.com/">
+						<i class="fab fa-twitter-square"></i>
+					</a>
+					<a href="https://plus.google.com/discover">
+						<i class="fab fa-google-plus-square"></i>
+					</a>
+					<a href="https://www.instagram.com/?hl=en">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
 			</div>
 		</div>
+
+		<!-- page copyright bar starts -->
+		<div class="copyright-container">
+			<div class="copyright-bar wrapper">
+				<nav>
+					<ul class="footer-nav">
+						<li>
+							<a href="#home">Home</a>
+						</li>
+						<li>
+							<a href="">Pages</a>
+						</li>
+						<li>
+							<a href="#courses">Courses</a>
+						</li>
+						<li>
+							<a href="#news">News</a>
+						</li>
+						<li>
+							<a href="">Events</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="copyright-txt">
+					<p>Copyright <span>&copy;</span> 2017</p>
+				</div>
+			</div>
+		</div>
+		<!-- page copyright bar ends -->
+		
 	</footer>
 	<!-- page footer end -->
 

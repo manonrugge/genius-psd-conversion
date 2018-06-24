@@ -1,5 +1,19 @@
 .contact-container {
     padding: 20px 0px;
+    color: white;
+}
+
+.contact-container,
+.contact-text,
+.services {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-text,
+.services {
+    margin: auto 0;
+    letter-spacing: 0.05rem;
 }
 
 .contact-bar {
@@ -13,27 +27,6 @@
     }
 }
 
-
-.contact-logo {
-    margin: 0 auto;
-}
-
-.contact-container,
-.contact-text,
-.services {
-    display: flex;
-    flex-direction: row;
-}
-
-.contact-text,
-.services {
-    margin: auto 0;
-}
-
-.contact-container {
-    color: white;
-    // justify-content: space-between;
-}
 .contact-text i {
     padding-right: 10px;
     color: $mainColor;
@@ -41,6 +34,10 @@
     &:last-of-type {
         padding-left: 20px;
     }
+}
+
+.contact-logo {
+    margin: 0 auto;
 }
 
 .services a {
@@ -55,6 +52,6 @@
     &:hover,
     &:focus {
         color: $mainColor;
+        cursor: pointer;
     }
 }
-    

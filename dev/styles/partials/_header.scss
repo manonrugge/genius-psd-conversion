@@ -1,0 +1,70 @@
+header {
+    background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url('./../assets/hero-image.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+    text-align: center;
+    h1 {
+        font-size: 5rem;
+        font-weight: $bold;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        color: $darkGrey;
+        line-height: 6.5rem;
+    }
+    p {
+        font-size: 1.4rem; 
+        line-height: 2.4rem;
+    }
+}
+
+/* general styling page buttons */
+@mixin orange-button {
+    background-color: $mainColor;
+    color: $white;
+    font-weight: $bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    transition: all 0.5s;
+    padding: 13px 25px;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    border-radius: 2px;
+    &:hover{
+        border: 2px solid $mainColor;
+        background-color: $white;
+        color: $mainColor;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    &:focus{
+        border: 2px solid $mainColor;
+        background-color: $white;
+        color: $mainColor;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    &:active{
+        position: relative;
+        bottom: -2px;
+        right: -2px;
+    }
+}
+
+/* styling page buttons END */
+
+
+/* header button */
+.header-button {
+    margin-top: 50px;
+    @include orange-button()
+}

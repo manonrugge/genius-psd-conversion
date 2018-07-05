@@ -371,21 +371,36 @@ header {
     bottom: -2px;
     right: -2px; }
 
-.courses-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  list-style: none; }
-  .courses-nav ul li {
-    padding: 20px; }
+.courses-container {
+  margin: 100px auto; }
 
+/* courses navigation */
+.courses-nav {
+  margin-top: 20px; }
+  .courses-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style: none;
+    text-decoration: none; }
+  .courses-nav li {
+    padding: 20px; }
+    .courses-nav li a {
+      text-decoration: none; }
+      .courses-nav li a:visited {
+        color: black; }
+      .courses-nav li a:hover, .courses-nav li a:focus {
+        color: #FF4500;
+        cursor: pointer; }
+
+/* individual courses */
 .courses {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -401,20 +416,96 @@ header {
       flex-wrap: wrap; }
 
 .course {
-  margin: 5px;
-  width: calc(25% - 10px);
+  margin-right: 20px;
+  margin-top: 20px;
+  width: calc(25% - 20px);
+  border-radius: 2px;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .course:nth-child(4), .course:nth-child(8) {
+    margin-right: 0px; }
   .course:hover {
     -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
             box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
   .course img {
-    width: 100%; }
+    width: 100%;
+    border-radius: 2px;
+    display: block; }
+
+figcaption {
+  padding: 10px;
+  font-weight: 800;
+  line-height: 1.4rem; }
+
+.profile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 10px; }
+
+/* placeholder profile photo */
+.profile-photo {
+  background-color: #232323;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px; }
+
+.course-name a {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #FF4500; }
+  .course-name a:visited {
+    color: black; }
+  .course-name a:hover, .course-name a:focus {
+    cursor: pointer; }
+  .course-name a p {
+    margin-top: 2.5px; }
 
 .course-stats {
-  border-top: 1px solid grey; }
+  border-top: 0.5px solid grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px; }
+
+.people {
+  padding-right: 10px; }
+  .people::before {
+    content: "\f007";
+    font-family: "FontAwesome";
+    padding-right: 5px; }
+
+.chat::before {
+  content: "\f075";
+  font-family: "FontAwesome";
+  padding-right: 5px; }
+
+.free {
+  padding: 10px;
+  font-style: italic; }
 
 .gallery {
   background-color: lightgrey; }
@@ -446,7 +537,8 @@ header {
   text-transform: uppercase; }
   .section-title h2 {
     font-size: 3.6rem;
-    font-weight: 700; }
+    font-weight: 700;
+    margin: 15px 0px; }
   .section-title h4 {
     font-size: 1.8rem;
     font-weight: 400;

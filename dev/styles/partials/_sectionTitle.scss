@@ -1,3 +1,4 @@
+/* general styling page titles */
 .section-title {
     text-align: center;
     text-transform: uppercase;
@@ -12,34 +13,11 @@
         margin: 0;
         padding: 0;
     }
-    // background-color: red;
 }
 
-// .magazine-container {
-//     position: relative;
-// }
-
-// .magazine-icon::before,
-// .magazine-icon::after {
-//     content: "";
-//     position: absolute;
-//     border-bottom: 2px solid #86bc42;
-//     width: 5px;
-//     width: 25px;
-//     z-index: 999;
-//     top: 15px;
-//     left: 400px;
-// }
-
-// .magazine-icon::after {
-//     left: 475px;
-// }
-
-.magazine-icon {
+.cubes-icon {
     margin: 0 auto;
     width: 50px;
-    // background: #fff;
-    // text-align: center;
     position: relative;
     img {
         width: 40px;

@@ -371,8 +371,48 @@ header {
     bottom: -2px;
     right: -2px; }
 
+/* general styling page titles */
+.section-title {
+  text-align: center;
+  text-transform: uppercase; }
+  .section-title h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin: 15px 0px; }
+  .section-title h4 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0; }
+
+.cubes-icon {
+  margin: 0 auto;
+  width: 50px;
+  position: relative; }
+  .cubes-icon img {
+    width: 40px; }
+  .cubes-icon::before {
+    content: "";
+    height: 3px;
+    width: 30px;
+    background: #FF4500;
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: -35px; }
+  .cubes-icon::after {
+    content: "";
+    height: 3px;
+    width: 30px;
+    background: #FF4500;
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 55px; }
+
 .courses-container {
-  margin: 100px auto; }
+  margin-top: 50px;
+  margin-bottom: 100px; }
 
 /* courses navigation */
 .courses-nav {
@@ -508,6 +548,7 @@ figcaption {
   font-style: italic; }
 
 .gallery {
+  padding: 50px 0px;
   background-color: lightgrey; }
 
 .gallery-container {
@@ -521,54 +562,18 @@ figcaption {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  margin-top: 50px; }
 
 .gallery-image {
   width: calc(33.33% - 20px);
   margin: 10px; }
   .gallery-image img {
-    width: 100%; }
+    width: 100%;
+    border-radius: 2px; }
 
 .overlay {
   display: none; }
-
-.section-title {
-  text-align: center;
-  text-transform: uppercase; }
-  .section-title h2 {
-    font-size: 3.6rem;
-    font-weight: 700;
-    margin: 15px 0px; }
-  .section-title h4 {
-    font-size: 1.8rem;
-    font-weight: 400;
-    margin: 0;
-    padding: 0; }
-
-.magazine-icon {
-  margin: 0 auto;
-  width: 50px;
-  position: relative; }
-  .magazine-icon img {
-    width: 40px; }
-  .magazine-icon::before {
-    content: "";
-    height: 3px;
-    width: 30px;
-    background: #FF4500;
-    display: block;
-    position: absolute;
-    top: 16px;
-    left: -35px; }
-  .magazine-icon::after {
-    content: "";
-    height: 3px;
-    width: 30px;
-    background: #FF4500;
-    display: block;
-    position: absolute;
-    top: 16px;
-    left: 55px; }
 
 .news-item {
   background-color: #f4f4f4;

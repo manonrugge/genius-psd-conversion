@@ -66,5 +66,5 @@ header {
 /* header button */
 .header-button {
     margin-top: 50px;
-    @include orange-button()
+    @include orange-button();
 }

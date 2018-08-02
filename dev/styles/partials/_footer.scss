@@ -26,6 +26,8 @@ footer {
     }
 }
 
+
+// ABOUT footer block starts
 .footer-about {
     line-height: 1.6rem;
     span {
@@ -43,6 +45,7 @@ footer {
     }
 } 
 
+// COURSES footer block starts
 .footer-courses {
     padding-left: 50px;
 }
@@ -73,6 +76,7 @@ footer {
 }
 
 
+// CONTACT footer block starts
 .footer-address,
 .footer-phone,
 .footer-email {
@@ -89,8 +93,44 @@ footer {
 .fa-map-marker-alt {
     padding-top: 4px;
 }
-// copyright bar starts
 
+
+// NEWSLETTER footer block starts
+.footer-news {
+    p {
+        line-height: 1.6rem; 
+    }
+    .subscribe-form {
+        padding: 10px 0px;
+    }
+}
+
+.emailSubscribe {
+    width: 75%;
+    border-radius: 2px;
+    border: none;
+    padding: 10px
+}
+
+.subscribeButton {
+    background-color: $mainColor;
+    border: none;
+    color: $white;
+    width: 15%;
+    height: 33px;
+    border-radius: 2px; 
+}
+
+.footer-social {
+    margin-top: 10px;
+    margin-left: -3px;
+    a {
+        color: $mainColor;
+        font-size: 2rem;
+    }
+}
+
+// copyright bar starts
 .copyright-container {
     background-color: $black;
     color: $white;

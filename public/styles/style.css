@@ -575,6 +575,10 @@ figcaption {
 .overlay {
   display: none; }
 
+.news-title,
+.news {
+  padding: 50px 0px; }
+
 .news-item {
   background-color: #f4f4f4;
   margin-bottom: 80px;
@@ -600,7 +604,8 @@ figcaption {
     padding: 25px;
     margin-top: -50px; }
     .news-item .news-image img {
-      width: 100%; }
+      width: 100%;
+      border-radius: 2px; }
   .news-item .news-text {
     width: 50%;
     padding: 25px;
@@ -614,6 +619,9 @@ figcaption {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
+    .news-item .news-text h3 {
+      font-size: 1.7rem;
+      margin: 10px 0px; }
 
 .item-info,
 .item-num {
@@ -641,16 +649,52 @@ figcaption {
 
 .news-description {
   margin-top: 25px;
-  line-height: 1.7rem;
+  line-height: 1.9rem;
   letter-spacing: 0.02rem;
   font-size: 1.2rem; }
 
 .learn-button {
-  margin-top: 50px; }
+  margin-top: 25px;
+  width: 150px;
+  background-color: #FF4500;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 13px 25px;
+  border: none;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 2px; }
+  .learn-button:hover {
+    border: 2px solid #FF4500;
+    background-color: #fff;
+    color: #FF4500;
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .learn-button:focus {
+    border: 2px solid #FF4500;
+    background-color: #fff;
+    color: #FF4500;
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .learn-button:active {
+    position: relative;
+    bottom: -2px;
+    right: -2px; }
+  .learn-button a {
+    color: #fff;
+    text-decoration: none; }
 
 .client {
   background-color: #f4f4f4;
-  padding: 50px 0px 150px 0px; }
+  padding: 75px 0px 150px 0px; }
 
 .client-container {
   display: -webkit-box;
@@ -707,6 +751,9 @@ figcaption {
   top: -35px;
   left: -25px; }
 
+.pricing {
+  padding: 75px 0px; }
+
 .pricing-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -737,7 +784,8 @@ figcaption {
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  border-radius: 2px; }
+  border-radius: 2px;
+  cursor: pointer; }
   .pricing-block:last-of-type {
     margin-right: 0; }
   .pricing-block:hover, .pricing-block:focus {
@@ -889,6 +937,33 @@ footer {
 
 .fa-map-marker-alt {
   padding-top: 4px; }
+
+.footer-news p {
+  line-height: 1.6rem; }
+
+.footer-news .subscribe-form {
+  padding: 10px 0px; }
+
+.emailSubscribe {
+  width: 75%;
+  border-radius: 2px;
+  border: none;
+  padding: 10px; }
+
+.subscribeButton {
+  background-color: #FF4500;
+  border: none;
+  color: #fff;
+  width: 15%;
+  height: 33px;
+  border-radius: 2px; }
+
+.footer-social {
+  margin-top: 10px;
+  margin-left: -3px; }
+  .footer-social a {
+    color: #FF4500;
+    font-size: 2rem; }
 
 .copyright-container {
   background-color: #000;

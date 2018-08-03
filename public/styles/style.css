@@ -702,6 +702,9 @@ figcaption {
 .client {
   background-color: #f4f4f4;
   padding: 75px 0px 150px 0px; }
+  @media (max-width: 800px) {
+    .client {
+      padding: 50px 0px 0px 0px; } }
 
 .client-container {
   display: -webkit-box;
@@ -712,6 +715,15 @@ figcaption {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 100px; }
+  @media (max-width: 960px) {
+    .client-container {
+      margin: 100px 100px 0px 100px; } }
+  @media (max-width: 800px) {
+    .client-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .client-item {
   width: 33.33%;
@@ -724,6 +736,17 @@ figcaption {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row; }
+  @media (max-width: 800px) {
+    .client-item {
+      padding-bottom: 100px;
+      width: 50%;
+      margin: 0 auto; } }
+  @media (max-width: 700px) {
+    .client-item {
+      width: 75%; } }
+  @media (max-width: 580px) {
+    .client-item {
+      width: 100%; } }
 
 .client-icon {
   position: relative;
@@ -746,6 +769,9 @@ figcaption {
   .client-txt p {
     margin-top: 20px;
     width: 85%; }
+    @media (max-width: 800px) {
+      .client-txt p {
+        width: 100%; } }
 
 .circle {
   content: '';

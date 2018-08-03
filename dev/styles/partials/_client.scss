@@ -1,19 +1,40 @@
 .client {
     background-color: $subColor;
     padding: 75px 0px 150px 0px;
+    @media (max-width: 800px) {
+        padding: 50px 0px 0px 0px;
+    }
 }
 
 .client-container {
     display: flex;
     flex-direction: row;
     margin-top: 100px;
+    @media (max-width: 960px) {
+        margin: 100px 100px 0px 100px;
+    }
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
 }
+
 .client-item {
     width: 33.33%;
     position: relative;
     z-index: 20;
     display: flex;
     flex-direction: row;
+    @media (max-width: 800px) {
+        padding-bottom: 100px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    @media (max-width: 700px) {
+        width: 75%;  
+    }
+    @media (max-width: 580px) {
+        width: 100%;  
+    }
 }
 
 .client-icon {
@@ -40,8 +61,12 @@
     p {
         margin-top: 20px;
         width: 85%;
+        @media (max-width: 800px) {
+            width: 100%;
+        }
     }
 }
+
 .circle {
     content:'';
     width: 150px;

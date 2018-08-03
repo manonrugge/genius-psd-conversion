@@ -147,7 +147,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .contact-container {
   padding: 20px 0px;
-  color: white; }
+  color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .contact-container,
 .contact-text,
@@ -181,7 +184,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     padding-left: 20px; }
 
 .contact-logo {
-  margin: 0 auto; }
+  position: relative; }
+  .contact-logo h3 {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%); }
 
 .services a {
   padding-left: 20px; }
@@ -338,6 +347,7 @@ header {
 /* header button */
 .header-button {
   margin-top: 50px;
+  border: 2px solid #FF4500;
   background-color: #FF4500;
   color: #fff;
   font-weight: 800;
@@ -491,7 +501,7 @@ figcaption {
 
 /* placeholder profile photo */
 .profile-photo {
-  background-color: #232323;
+  background-color: lightgrey;
   border-radius: 50%;
   width: 25px;
   height: 25px;
@@ -549,7 +559,7 @@ figcaption {
 
 .gallery {
   padding: 50px 0px;
-  background-color: lightgrey; }
+  background-color: #f4f4f4; }
 
 .gallery-container {
   display: -webkit-box;
@@ -575,9 +585,11 @@ figcaption {
 .overlay {
   display: none; }
 
-.news-title,
-.news {
+.news-title {
   padding: 50px 0px; }
+
+.news {
+  padding: 25px 0px; }
 
 .news-item {
   background-color: #f4f4f4;
@@ -595,9 +607,6 @@ figcaption {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 2px; }
-  .news-item:hover {
-    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
   .news-item .news-image {
     display: block;
     width: 50%;
@@ -655,7 +664,8 @@ figcaption {
 
 .learn-button {
   margin-top: 25px;
-  width: 150px;
+  width: 175px;
+  border: 2px solid #FF4500;
   background-color: #FF4500;
   color: #fff;
   font-weight: 800;
@@ -688,9 +698,6 @@ figcaption {
     position: relative;
     bottom: -2px;
     right: -2px; }
-  .learn-button a {
-    color: #fff;
-    text-decoration: none; }
 
 .client {
   background-color: #f4f4f4;

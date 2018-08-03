@@ -28,6 +28,7 @@ header {
 
 /* general styling page buttons */
 @mixin orange-button {
+    border: 2px solid $mainColor;
     background-color: $mainColor;
     color: $white;
     font-weight: $bold;

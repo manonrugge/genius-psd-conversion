@@ -1,6 +1,7 @@
 .contact-container {
     padding: 20px 0px;
     color: white;
+    justify-content: space-between;
 }
 
 .contact-container,
@@ -37,7 +38,13 @@
 }
 
 .contact-logo {
-    margin: 0 auto;
+    position: relative;
+    h3 {
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
 }
 
 .services a {

@@ -1,10 +1,19 @@
 .pricing {
     padding: 75px 0px;
+    @media (max-width: 1050px) {
+        padding: 75px 50px;
+    }
 }
 .pricing-container {
     display: flex;
     flex-direction: row;
-    margin: 100px 0px;
+    padding: 100px 0px;
+    @media (max-width: 860px) {
+        flex-direction: column;
+    }
+    @media (max-width: 560px) {
+        padding-bottom: 0;
+    }
 }
 
 .pricing-block {
@@ -39,8 +48,19 @@
             color: black;
         }
     }
+    @media (max-width: 860px) {
+        margin-top: 100px;
+        transform: translate(50%);
+        width: 50%;
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+    @media (max-width: 560px) {
+        transform: translate(0%);
+        width: 100%;
+    }
 }
-
 
 .price {
     background: $subColor;
@@ -73,7 +93,6 @@ sup {
     border-radius: 2px;
     margin: 20px 10px;
 }
-
 
 .pricing-title {
     h4 {

@@ -926,10 +926,29 @@ footer {
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 20px 0px; }
+  @media (max-width: 950px) {
+    .footer-container {
+      padding: 20px 50px; } }
+  @media (max-width: 460px) {
+    .footer-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 20px 20px; } }
 
 .footer-block {
   width: 25%;
   color: #fff; }
+  @media (max-width: 760px) {
+    .footer-block {
+      width: 33.33%; } }
+  @media (max-width: 660px) {
+    .footer-block {
+      width: 50%; } }
+  @media (max-width: 460px) {
+    .footer-block {
+      width: 100%; } }
   .footer-block h4 {
     text-transform: uppercase;
     font-size: 1.3rem;
@@ -946,6 +965,9 @@ footer {
   .footer-about span {
     color: #FF4500;
     font-weight: 800; }
+  @media (max-width: 660px) {
+    .footer-about {
+      display: none; } }
 
 .programs li::before {
   content: "\f00c";
@@ -955,6 +977,9 @@ footer {
 
 .footer-courses {
   padding-left: 50px; }
+  @media (max-width: 760px) {
+    .footer-courses {
+      display: none; } }
 
 .footer-course-list li {
   line-height: 2rem; }
@@ -974,6 +999,14 @@ footer {
     margin-right: 10px; }
   .footer-course-list li:hover a {
     color: #FF4500; }
+
+@media (max-width: 760px) {
+  .footer-contact {
+    padding-left: 50px; } }
+
+@media (max-width: 660px) {
+  .footer-contact {
+    padding-left: 0px; } }
 
 .footer-address,
 .footer-phone,
@@ -1040,6 +1073,12 @@ footer {
           align-items: center;
   letter-spacing: 0.05rem;
   padding: 10px 0px; }
+  @media (max-width: 950px) {
+    .copyright-bar {
+      padding: 10px 50px; } }
+  @media (max-width: 460px) {
+    .copyright-bar {
+      padding: 10px 20px; } }
   .copyright-bar ul {
     text-transform: uppercase;
     list-style-type: none;
@@ -1057,6 +1096,10 @@ footer {
     color: #fff; }
     .copyright-bar a:hover, .copyright-bar a:focus {
       color: #FF4500; }
+
+@media (max-width: 480px) {
+  .footer-nav {
+    display: none; } }
 
 .copyright-txt span {
   color: #FF4500; }

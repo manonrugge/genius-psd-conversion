@@ -6,11 +6,27 @@ footer {
     display: flex;
     flex-direction: row;
     padding: 20px 0px;
+    @media (max-width: 950px) {
+        padding: 20px 50px;
+    }
+    @media (max-width: 460px) {
+        flex-direction: column;
+        padding: 20px 20px;
+    }
 }
 
 .footer-block {
     width: 25%;
     color: $white;
+    @media (max-width: 760px) {
+        width: 33.33%;
+    }
+    @media (max-width: 660px) {
+        width: 50%;
+    }
+    @media (max-width: 460px) {
+        width: 100%;
+    }
     h4 {
         text-transform: uppercase;
         font-size: 1.3rem;
@@ -34,6 +50,9 @@ footer {
         color: $mainColor;
         font-weight: $bold;
     }
+    @media (max-width: 660px) {
+        display: none;
+    }
 }
 
 .programs li {
@@ -48,6 +67,9 @@ footer {
 // COURSES footer block starts
 .footer-courses {
     padding-left: 50px;
+    @media (max-width: 760px) {
+        display: none;
+    }
 }
 
 .footer-course-list li {
@@ -75,8 +97,16 @@ footer {
     }   
 }
 
-
 // CONTACT footer block starts
+.footer-contact {
+    @media (max-width: 760px) {
+        padding-left: 50px;
+    }
+    @media (max-width: 660px) {
+        padding-left: 0px;
+    }
+}
+
 .footer-address,
 .footer-phone,
 .footer-email {
@@ -93,7 +123,6 @@ footer {
 .fa-map-marker-alt {
     padding-top: 4px;
 }
-
 
 // NEWSLETTER footer block starts
 .footer-news {
@@ -143,6 +172,12 @@ footer {
     align-items: center;
     letter-spacing: 0.05rem;
     padding: 10px 0px;
+    @media (max-width: 950px) {
+        padding: 10px 50px;
+    }
+    @media (max-width: 460px) {
+        padding: 10px 20px;
+    }
     ul {
         text-transform: uppercase;
         list-style-type: none;
@@ -158,6 +193,12 @@ footer {
         &:focus {
             color: $mainColor;
         }
+    }
+}
+
+.footer-nav {
+    @media (max-width: 480px) {
+        display: none;
     }
 }
 

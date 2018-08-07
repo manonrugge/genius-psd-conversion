@@ -4,6 +4,12 @@
 
 .news {
     padding: 25px 0px;
+    @media (max-width: 950px) {
+        margin: 0px 50px;
+    }
+    @media (max-width: 460px) {
+        margin: 0px 20px;   
+    }
 }
 
 .news-item {
@@ -24,6 +30,9 @@
             width: 100%;
             border-radius: 2px;
         }
+        @media (max-width: 6660px) {
+            width: 100%;
+        }
     }
     .news-text {
         width: 50%;
@@ -35,6 +44,12 @@
             font-size: 1.7rem;
             margin: 10px 0px;
         }
+        @media (max-width: 660px) {
+            width: 100%;
+        }
+    }
+    @media (max-width: 660px) {
+        flex-direction: column;
     }
 }
 

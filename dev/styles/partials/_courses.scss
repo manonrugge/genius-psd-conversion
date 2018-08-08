@@ -2,6 +2,12 @@
 .courses-container {
     margin-top: 50px;
     margin-bottom: 100px;
+    @media (max-width: 960px) {
+        padding: 0px 50px;
+    }
+    @media (max-width: 460px) {
+        padding: 0px 20px;
+    }
 }
 
 /* courses navigation */
@@ -13,9 +19,16 @@
         justify-content: center;
         list-style: none;
         text-decoration: none;
+        padding: 0;
+        @media (max-width: 540px) {
+            flex-wrap: wrap;  
+        }
     }
     li {
         padding: 20px;
+        @media (max-width: 540px) {
+            padding: 5px 10px; 
+        }
         a {
             text-decoration: none;
             &:visited {
@@ -56,6 +69,45 @@
         width: 100%;
         border-radius: 2px;
         display: block;
+    }
+    @media (max-width: 860px) {
+        width: calc(33.33% - 20px);
+        &:nth-child(4),
+        &:nth-child(8) {
+            margin-right: 20px;
+        }
+        &:nth-child(3),
+        &:nth-child(6) {
+            margin-right: 0px;
+        }
+    }
+    @media (max-width: 660px) {
+        width: calc(50% - 20px);
+        &:nth-child(1),
+        &:nth-child(3),
+        &:nth-child(5),
+        &:nth-child(7) {
+            margin-right: 20px;
+        }
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(6),
+        &:nth-child(8) {
+            margin-right: 0px;
+        }
+    }
+    @media (max-width: 460px) {
+        width: 100%;
+        margin-top: 50px;
+        &:nth-child(1),
+        &:nth-child(3),
+        &:nth-child(5),
+        &:nth-child(7) {
+            margin-right: 0px;
+        }
+        &:nth-child(1) {
+            margin-top: 10px;
+        }
     }
 }
 

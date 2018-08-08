@@ -2,6 +2,9 @@
     padding: 20px 0px;
     color: white;
     justify-content: space-between;
+    @media (max-width: 950px){
+        padding: 20px 20px;
+    }
 }
 
 .contact-container,
@@ -15,6 +18,9 @@
 .services {
     margin: auto 0;
     letter-spacing: 0.05rem;
+    @media (max-width: 660px){
+        visibility: hidden;
+    }
 }
 
 .contact-bar {
@@ -28,12 +34,16 @@
     }
 }
 
-.contact-text i {
-    padding-right: 10px;
-    color: $mainColor;
-    
-    &:last-of-type {
-        padding-left: 20px;
+.contact-text {
+    @media (max-width: 660px){
+        display: none;
+    }
+    i {
+        padding-right: 10px;
+        color: $mainColor;
+        &:last-of-type {
+            padding-left: 20px;
+        }
     }
 }
 
